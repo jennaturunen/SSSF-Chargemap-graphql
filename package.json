@@ -1,0 +1,28 @@
+{
+  "name": "sssf-chargemap-graphql",
+  "version": "1.0.0",
+  "description": "Server-side Scripting Frameworks course, week 3 Chargemap with GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennaturunen/SSSF-Chargemap-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennaturunen/SSSF-Chargemap-graphql/issues"
+  },
+  "homepage": "https://github.com/jennaturunen/SSSF-Chargemap-graphql#readme",
+  "type": "module",
+  "dependencies": {
+    "apollo-server-express": "^2.22.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "mongoose": "^5.12.3"
+  }
+}
