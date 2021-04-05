@@ -34,7 +34,7 @@ export default gql`
     coordinates: [Float]
   }
   extend type Query {
-    stations: [Station]
+    stations(start: Int = 0, limit: Int = 3, bounds: Bounds): [Station]
     station(id: ID!): Station
   }
   extend type Mutation {
@@ -59,9 +59,3 @@ export default gql`
     deleteStation(id: ID!): ID
   }
 `;
-
-/* EXAMPLE of more complex query with parameters
-  extend type Query {
-    stations(start: Int = 0, limit: Int = 3, bounds: Bounds): [Station]
-}
-*/
